@@ -1,0 +1,47 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-size: 12px;
+	font-family: "microsoft yahei";
+	color: #000;
+}
+h1,h2,h3,h4,h5,h6{
+	margin: 0;
+	padding: 0;
+}
+ul,ol,li{
+	list-style: none;
+}
+.header{
+	width: 100%;
+	height: 80px;
+}
+.header h1{
+	font-size: 24px;
+	font-weight: normal;
+	line-height: 80px;
+	text-indent: 2em;
+}
+.content{
+	box-sizing: border-box;
+	width: 100%;
+	padding: 0 50px;
+}
+.content h2{
+	font-size: 20px;
+	font-weight: normal;
+	line-height: 40px;
+}
+.commend-line{
+	margin: 10px 0;
+}
+.commend-line .commend-name{
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 24px;
+}
+.commend-line .commend-explain{
+	font-size: 16px;
+	font-weight: normal;
+	line-height: 24px;
+}
