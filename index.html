@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="renderer" content="webkit" />
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<title>GitStudy</title>
+	</head>
+	<body>
+		<header class="header">
+			<h1>GitStudy</h1>
+		</header>
+		<div class="content">
+			<h2>Git命令行</h2>
+			<div class="commend-line">
+				<span class="commend-name">git init:</span>
+				<span class="commend-explain">初始化git仓库 创建仓库</span>
+			</div>
+			<div class="commend-line">
+				<span class="commend-name">git add：</span>
+				<span class="commend-explain">添加文件 将文件添加到暂存区 先add再commit</span>
+			</div>
+			<div class="commend-line">
+				<span class="commend-name">git commit -m"提交文件时的说明"：</span>
+				<span class="commend-explain">提交文件</span>
+			</div>
+			<div class="commend-line">
+				<span class="commend-name">git status:</span>
+				<span class="commend-explain">查看仓库的状态</span>
+			</div>
+			<div class="commend-line">
+				<span class="commend-name">git diff:</span>
+				<span class="commend-explain">查看修改的内容</span>
+			</div>
+			<div class="commend-line">
+				<span class="commend-name">git log:</span>
+				<span class="commend-explain">查看文件的历史记录</span>
+			</div>
+			<div class="commend-line">
+				<span class="commend-name">git log --pretty=oneline:</span>
+				<span class="commend-explain">单行查看文件的历史记录</span>
+			</div>
+			<div class="commend-line">
+				<span class="commend-name">git reset --hard HEAD^:</span>
+				<span class="commend-explain">回退到上一个版本</span>
+			</div>
+			<div class="commend-line">
+				<span class="commend-name">git reset --hard HEAD~n:</span>
+				<span class="commend-explain">回退到上n个版本</span>
+			</div>
+			<div class="commend-line">
+				<span class="commend-name">git reset --hard 版本号:</span>
+				<span class="commend-explain">回退到某一个版本</span>
+			</div>
+			<div class="commend-line">
+				<span class="commend-name">cat 文件名:</span>
+				<span class="commend-explain">查看文件的内容 显示的为工作区的文件内容</span>
+			</div>
+			<div class="commend-line">
+				<span class="commend-name">git reflog: </span>
+				<span class="commend-explain">查看命令的操作历史</span>
+			</div>
+			<div class="commend-line">
+				<span class="commend-name">git diff HEAD -- 文件名：</span>
+				<span class="commend-explain">查看工作区的文件与版本库的不同</span>
+			</div>
+			<div class="commend-line">
+				<span class="commend-name">git checkout -- 文件名：</span>
+				<span class="commend-explain">使本地文件与版本库的相同</span>
+			</div>
+			<div class="commend-line">
+				<span class="commend-name">git reset HEAD 文件名：</span>
+				<span class="commend-explain">将暂存区的文件重新放回工作区</span>
+			</div>
+		</div>
+	</body>
+</html>
