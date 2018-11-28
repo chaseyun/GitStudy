@@ -17,20 +17,20 @@
 				<span class="commend-explain">初始化git仓库 创建仓库</span>
 			</div>
 			<div class="commend-line">
-				<span class="commend-name">git config --global user.name"用户名"</span>
+				<span class="commend-name">git config --global user.name"用户名"：</span>
 				<span class="commend-explain">全局创建用户名 用于身份识别</span>
 			</div>
 			<div class="commend-line">
-				<span class="commend-name">git config user.name</span>
+				<span class="commend-name">git config --global user.email"用户邮箱"：</span>
+				<span class="commend-explain">全局创建用户</span>
+			</div>
+			<div class="commend-line">
+				<span class="commend-name">git config user.name：</span>
 				<span class="commend-explain">查看用户名</span>
 			</div>
 			<div class="commend-line">
-				<span class="commend-name">git config user.email</span>
+				<span class="commend-name">git config user.email：</span>
 				<span class="commend-explain">查看用户邮箱</span>
-			</div>
-			<div class="commend-line">
-				<span class="commend-name">git config --global user.email"用户邮箱"</span>
-				<span class="commend-explain">全局创建用户</span>
 			</div>
 			<div class="commend-line">
 				<span class="commend-name">git add：</span>
@@ -89,72 +89,153 @@
 				<span class="commend-explain">将暂存区的文件重新放回工作区</span>
 			</div>
 			<div class="commend-line">
-				<span class="commend-name">shh-keygen -t rsa -C"你的邮箱"</span>
+				<span class="commend-name">shh-keygen -t rsa -C"你的邮箱"：</span>
 				<span class="commend-explain">创建SHH-Key</span>
 			</div>
 			<div class="commend-line">
-				<span class="commend-name">git remote add origin 仓库地址</span>
+				<span class="commend-name">git remote add origin 仓库地址：</span>
 				<span class="commend-explain">将本地仓库与远程仓库相连接</span>
 			</div>
 			<div class="commend-line">
-				<span class="commend-name">git push -u origin master</span>
+				<span class="commend-name">git push -u origin master：</span>
 				<span class="commend-explain">将本地仓库内容推送到远程仓库上 第一次推送使用 -u</span>
 			</div>
 			<div class="commend-line">
-				<span class="commend-name">git checkout -b 分支名字</span>
+				<span class="commend-name">git push origin 分支名字：</span>
+				<span class="commend-explain">将分支修改的内容推送到远程仓库</span>
+			</div>
+			<div class="commend-line">
+				<span class="commend-name">git pull --rebase origin master：</span>
+				<span class="commend-explain">把远程仓库中的更新合并到本地库，--rebase的作用是取消掉本地库刚刚的commit，并把他们接到更新后的版本库之中</span>
+			</div>
+			<div class="commend-line">
+				<span class="commend-name">git checkout -b 分支名字：</span>
 				<span class="commend-explain">创建分支 并切换到分支</span>
 			</div>
 			<div class="commend-line">
-				<span class="commend-name">git branch 分支名</span>
+				<span class="commend-name">git branch 分支名：</span>
 				<span class="commend-explain">创建分支</span>
 			</div>
 			<div class="commend-line">
-				<span class="commend-name">git merge 分支名</span>
+				<span class="commend-name">git merge 分支名：</span>
 				<span class="commend-explain">把分支合并到当前分支上 默认为fast forward模式</span>
 			</div>
 			<div class="commend-line">
-				<span class="commend-name">git merge --no-ff -m"合并注释" 分支名字</span>
-				<span class="commend-explain"></span>
+				<span class="commend-name">git merge --no-ff -m"合并注释" 分支名字：</span>
+				<span class="commend-explain">禁用fast forward模式 合并记录可查询</span>
 			</div>
 			<div class="commend-line">
-				<span class="commend-name">git branch</span>
+				<span class="commend-name">git branch：</span>
 				<span class="commend-explain">查看本地分支</span>
 			</div>
 			<div class="commend-line">
-				<span class="commend-name">git branch -a</span>
-				<span class="commend-explain">查看本地和远程仓库的所有分支</span>
+				<span class="commend-name">git branch -a：</span>
+				<span class="commend-explain">查看本地和远程仓库的所有分支：</span>
 			</div>
 			<div class="commend-line">
-				<span class="commend-name">git branch -d 分支名</span>
+				<span class="commend-name">git branch -d 分支名：</span>
 				<span class="commend-explain">删除分支</span>
 			</div>
 			<div class="commend-line">
-				<span class="commend-name">git push origin --delete 分支名字</span>
+				<span class="commend-name">git branch -D 分支名：</span>
+				<span class="commend-explain">强行删除分支</span>
+			</div>
+			<div class="commend-line">
+				<span class="commend-name">git push origin --delete 分支名字：</span>
 				<span class="commend-explain">删除远程仓库的分支</span>
 			</div>
 			<div class="commend-line">
-				<span class="commend-name">git log --graph --pretty=oneline --abbrev-commit</span>
+				<span class="commend-name">git log --graph --pretty=oneline --abbrev-commit：</span>
 				<span class="commend-explain">查看分支的合并情况</span>
 			</div>
 			<div class="commend-line">
-				<span class="commend-name">git stash</span>
+				<span class="commend-name">git stash：</span>
 				<span class="commend-explain">隐藏当前的工作区</span>
 			</div>
 			<div class="commend-line">
-				<span class="commend-name">git stash list</span>
+				<span class="commend-name">git stash list：</span>
 				<span class="commend-explain">查看隐藏的工作区</span>
 			</div>
 			<div class="commend-line">
-				<span class="commend-name">git stash apply</span>
+				<span class="commend-name">git stash apply：</span>
 				<span class="commend-explain">恢复stash内容</span>
 			</div>
 			<div class="commend-line">
-				<span class="commend-name">git stash drop</span>
+				<span class="commend-name">git stash drop：</span>
 				<span class="commend-explain">删除stash的内容</span>
 			</div>
 			<div class="commend-line">
-				<span class="commend-name">git stash pop</span>
+				<span class="commend-name">git stash pop：</span>
 				<span class="commend-explain">恢复工作区，并删除stash</span>
+			</div>
+			<div class="commend-line">
+				<span class="commend-name">git remote：</span>
+				<span class="commend-explain">查看远程库的信息</span>
+			</div>
+			<div class="commend-line">
+				<span class="commend-name">git remote -v：</span>
+				<span class="commend-explain">查看远程库的详细信息</span>
+			</div>
+			<div class="commend-line">
+				<span class="commend-name">git clone git@github.com:远程仓库名字：</span>
+				<span class="commend-explain">从远程仓库克隆项目</span>
+			</div>
+			<div class="commend-line">
+				<span class="commend-name">git checkout -b 分支名 origin/分支名：</span>
+				<span class="commend-explain">创建远程的origin的分支到本地</span>
+			</div>
+			<div class="commend-line">
+				<span class="commend-name">git branch --set-upstream-to=origin/分支名 分支名：</span>
+				<span class="commend-explain">将本地分支与远程分支链接</span>
+			</div>
+			<div class="commend-line">
+				<span class="commend-name">git pull:</span>
+				<span class="commend-explain">从远程仓库将最新的提交抓取</span>
+			</div>
+			<div class="commend-line">
+				<span class="commend-name">git rebase</span>
+				<span class="commend-explain">把本地未push的分叉提交历史整理为直线</span>
+			</div>
+			<div class="commend-line">
+				<span class="commend-name">git tag 标签名：</span>
+				<span class="commend-explain">为分支打上标签</span>
+			</div>
+			<div class="commend-line">
+				<span class="commend-name">git tag 标签名 版本号：</span>
+				<span class="commend-explain">为以往没有打标签的分支 添加标签</span>
+			</div>
+			<div class="commend-line">
+				<span class="commend-name">git tag -a 标签名 -m"标签说明"：</span>
+				<span class="commend-explain">创建带有说明的标签</span>
+			</div>
+			<div class="commend-line">
+				<span class="commend-name">git show 标签名：</span>
+				<span class="commend-explain">查看标签的说明文字</span>
+			</div>
+			<div class="commend-line">
+				<span class="commend-name">git tag：</span>
+				<span class="commend-explain">查看所有的标签</span>
+			</div>
+			<div class="commend-line">
+				<span class="commend-name">git tag -d 标签名：</span>
+				<span class="commend-explain">删除标签，本地标签</span>
+			</div>
+			<div class="commend-line">
+				<span class="commend-name">git push origin 标签名：</span>
+				<span class="commend-explain">推送标签到远程仓库</span>
+			</div>
+			<div class="commend-line">
+				<span class="commend-name">git push origin --tags：</span>
+				<span class="commend-explain">一次性推送全部尚未推送的标签</span>
+			</div>
+			<div class="commend-line">
+				<span class="commend-name">git push origin:refs/tags/标签名：</span>
+				<span class="commend-explain">从远程仓库删除标签</span>
+			</div>
+			<h2>Git Flow Path</h2>
+			<div class="flow-path-describe">
+				第一步：初始化仓库
+				第二步：全局配置用户名，用户邮箱
 			</div>
 		</div>
 	</body>
